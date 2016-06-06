@@ -34,27 +34,9 @@
 		<voice sentence="Yoooohhuuuu!" yell="1"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="60000"/><!-- gold coin -->
-		<item id="2148" countmax="92" chance="60000"/><!-- gold coin -->
-		<item id="2152" countmax="9" chance="100000"/><!-- platinum coin -->
-		<item id="2795" countmax="6" chance="20740"/><!-- fire mushroom -->
-		<item id="8473" countmax="5" chance="20000"/><!-- ultimate health potion -->
-		<item id="7590" countmax="5" chance="14285"/><!-- great mana potion -->
-		<item id="2149" chance="10000"/><!-- small emerald -->
-		<item id="7368" countmax="15" chance="5263"/><!-- assassin star -->
-		<item id="2432" chance="3703"/><!-- fire axe -->
-		<item id="2393" chance="2000"/><!-- giant sword -->
-		<item id="2179" chance="15010"/><!-- gold ring -->
-		<item id="2396" chance="666"/><!-- ice rapier -->
-		<item id="2520" chance="649"/><!-- demon shield -->
-		<item id="25865" chance="569"/><!-- rift lance -->
-		<item id="25867" chance="569"/><!-- chifre -->
-		<item id="2470" chance="413"/><!-- golden legs -->
-		<item id="2514" chance="389"/><!-- mastermind shield -->
-		<item id="26005" chance="1069"/><!-- rift crossbow -->
-		<item id="26004" chance="1069"/><!-- rift bow -->
-		<item id="2164" chance="170"/><!-- might ring -->
-		<item id="2472" chance="70"/><!-- magic plate armor -->
-		<item id="7382" chance="80"/><!-- demonrage sword -->
+		<item id="2671" countmax="2" chance="35000"/><!-- ham -->
+		<item id="5897" chance="710"/><!-- wolf paw -->
+		<item id="3976" chance="40"/><!-- wolf trophy -->
+		<item id="11235" chance="5230"/><!-- warwolf fur -->
 	</loot>
 </monster>

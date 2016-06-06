@@ -59,7 +59,6 @@
 		<item id="5804" chance="10000000"/><!-- nose ring -->
 		<item id="2189" chance="1333"/><!-- wand of cosmic energy -->
 		<item id="2207" chance="2000"/><!-- sword ring -->
-		<item id="2502" chance="3000"/><!-- dwarven helmet -->
 		<item id="2666" countmax="2" chance="33333"/><!-- meat -->
 		<item id="2379" chance="6666"/><!-- dagger -->
 		<item id="2475" chance="1000"/><!-- warrior helmet -->

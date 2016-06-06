@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Ogre Savage" nameDescription="Ogre Savage" race="blood" experience="955" speed="200" manacost="0">
-	<health now="1400" max="1400"/>
+<monster name="Ogre Savage" nameDescription="Ogre Savage" race="blood" experience="55" speed="200" manacost="0">
+	<health now="140" max="140"/>
 	<look type="858" corpse="5527"/>
 	<targetchange interval="4000" chance="0"/>
 	<flags>

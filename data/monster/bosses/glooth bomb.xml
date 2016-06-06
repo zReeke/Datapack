@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Glooth Bomb" nameDescription="a glooth bomb" race="blood" experience="2600" speed="80" manacost="0">
 	<health now="100000" max="100000"/>
-	<look type="680" corpse="23355"/>
+	<look type="680" corpse="24256"/>
 	<targetchange interval="2000" chance="3"/>
 	<flags>
 		<flag summonable="0"/>

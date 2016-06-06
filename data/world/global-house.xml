@@ -514,9 +514,9 @@
 	<house name="Sunset Homes, Flat 23" houseid="1936" entryx="32334" entryy="32244" entryz="5" rent="860" townid="2" size="14" />
 	<house name="Sunset Homes, Flat 22" houseid="1937" entryx="32333" entryy="32237" entryz="5" rent="520" townid="2" size="10" />
 	<house name="Sunset Homes, Flat 21" houseid="1938" entryx="32333" entryy="32232" entryz="5" rent="520" townid="2" size="10" />
-	<house name="Harbour Place 1 (Shop)" houseid="1939" entryx="32336" entryy="32222" entryz="7" rent="1100" townid="2" size="16" />
+	<house name="Harbour Place 1 (Shop)" houseid="1939" entryx="32336" entryy="32222" entryz="7" rent="1100" townid="2" size="41" />
 	<house name="Harbour Place 2 (Shop)" houseid="1940" entryx="32336" entryy="32210" entryz="7" rent="1300" townid="2" size="19" />
-	<house name="Warriors Guildhall" houseid="1941" entryx="32348" entryy="32213" entryz="7" rent="14725" townid="2" size="256" />
+	<house name="Warriors Guildhall" houseid="1941" entryx="32352" entryy="32205" entryz="7" rent="14725" townid="2" size="256" />
 	<house name="Farm Lane, 1st floor (Shop)" houseid="1942" entryx="32382" entryy="32232" entryz="7" rent="945" townid="2" size="15" />
 	<house name="Farm Lane, Basement (Shop)" houseid="1943" entryx="32382" entryy="32231" entryz="8" rent="945" townid="2" size="15" />
 	<house name="Main Street 9, 1st floor (Shop)" houseid="1944" entryx="32377" entryy="32224" entryz="7" rent="1440" townid="2" size="25" />
@@ -610,10 +610,10 @@
 	<house name="Straycat's Corner 2" houseid="2032" entryx="32284" entryy="32845" entryz="7" rent="660" townid="7" size="18" />
 	<house name="Litter Promenade 5" houseid="2033" entryx="32290" entryy="32859" entryz="7" rent="580" townid="7" size="11" />
 	<house name="Litter Promenade 4" houseid="2034" entryx="32288" entryy="32865" entryz="7" rent="390" townid="7" size="10" />
-	<house name="Litter Promenade 3" houseid="2035" entryx="32286" entryy="32865" entryz="7" rent="450" townid="7" size="12" />
+	<house name="Litter Promenade 3" houseid="2035" entryx="32286" entryy="32865" entryz="7" rent="450" townid="7" size="9" />
 	<house name="Litter Promenade 2" houseid="2036" entryx="32277" entryy="32861" entryz="7" rent="300" townid="7" size="7" />
-	<house name="Litter Promenade 1" houseid="2037" entryx="32271" entryy="32862" entryz="7" rent="400" townid="7" size="6" />
-	<house name="The Shelter" houseid="2038" entryx="32267" entryy="32860" entryz="7" rent="13590" townid="7" size="279" />
+	<house name="Litter Promenade 1" houseid="2037" entryx="32271" entryy="32862" entryz="7" rent="400" townid="7" size="5" />
+	<house name="The Shelter" houseid="2038" entryx="32267" entryy="32860" entryz="7" rent="13590" townid="7" size="237" />
 	<house name="Straycat's Corner 6" houseid="2039" entryx="32281" entryy="32858" entryz="7" rent="300" townid="7" size="7" />
 	<house name="Straycat's Corner 5" houseid="2040" entryx="32281" entryy="32853" entryz="7" rent="760" townid="7" size="16" />
 	<house name="Rum Alley 3" houseid="2042" entryx="32272" entryy="32854" entryz="7" rent="330" townid="7" size="9" />
@@ -939,7 +939,7 @@
 	<house name="Demon Tower" houseid="2371" entryx="32601" entryy="32116" entryz="7" rent="3340" townid="2" size="50" />
 	<house name="Nautic Observer" houseid="2372" entryx="32483" entryy="31825" entryz="7" rent="6540" townid="4" size="144" />
 	<house name="Riverspring" houseid="2373" entryx="32761" entryy="32128" entryz="7" rent="19450" townid="3" size="280" />
-	<house name="House of Recreation" houseid="2374" entryx="32280" entryy="31823" entryz="7" rent="22540" townid="4" size="339" />
+	<house name="House of Recreation" houseid="2374" entryx="32280" entryy="31823" entryz="7" rent="22540" townid="4" size="340" />
 	<house name="Valorous Venore" houseid="2375" entryx="32979" entryy="32096" entryz="6" rent="14435" townid="1" size="254" />
 	<house name="Ab'Dendriel Clanhall" houseid="2376" entryx="32714" entryy="31643" entryz="7" rent="14850" townid="5" size="262" />
 	<house name="Castle of the Winds" houseid="2377" entryx="32657" entryy="31583" entryz="7" rent="23885" townid="5" size="415" />
@@ -1018,7 +1018,7 @@
 	<house name="Hare's Den" houseid="2460" entryx="32687" entryy="32193" entryz="10" rent="7500" townid="3" size="165" />
 	<house name="Lost Cavern" houseid="2461" entryx="32559" entryy="31856" entryz="7" rent="14730" townid="3" size="502" />
 	<house name="Caveman Shelter" houseid="2462" entryx="33007" entryy="31426" entryz="6" rent="3780" townid="14" size="78" />
-	<house name="Old Sanctuary of God King Qjell" houseid="2463" entryx="33473" entryy="31310" entryz="9" rent="21940" townid="28" size="577" />
+	<house name="Old Sanctuary of God King Qjell" houseid="2463" entryx="33473" entryy="31310" entryz="9" rent="21940" townid="28" size="575" />
 	<house name="Wallside Lane 1" houseid="2464" entryx="33650" entryy="31928" entryz="6" rent="7590" townid="33" size="148" />
 	<house name="Wallside Residence" houseid="2465" entryx="33658" entryy="31921" entryz="6" rent="6680" townid="33" size="131" />
 	<house name="Wallside Lane 2" houseid="2466" entryx="33637" entryy="31928" entryz="6" rent="8445" townid="33" size="169" />
@@ -1026,7 +1026,7 @@
 	<house name="Antimony Lane 2" houseid="2468" entryx="33637" entryy="31921" entryz="6" rent="4745" townid="33" size="94" />
 	<house name="Vanward Flats B" houseid="2469" entryx="33614" entryy="31935" entryz="6" rent="7410" townid="33" size="146" />
 	<house name="Vanward Flats A" houseid="2470" entryx="33621" entryy="31935" entryz="6" rent="7410" townid="33" size="146" />
-	<house name="Bronze Brothers Bastion" houseid="2471" entryx="33599" entryy="31933" entryz="6" rent="35205" guildhall="true" townid="33" size="698" />
+	<house name="Bronze Brothers Bastion" houseid="2471" entryx="33599" entryy="31933" entryz="6" rent="35205" guildhall="true" townid="33" size="697" />
 	<house name="Antimony Lane 1" houseid="2472" entryx="33656" entryy="31915" entryz="6" rent="7105" townid="33" size="135" />
 	<house name="Rathleton Hills Estate" houseid="2473" entryx="33662" entryy="31917" entryz="6" rent="20685" guildhall="true" townid="33" size="391" />
 	<house name="Rathleton Hills Residence" houseid="2474" entryx="33651" entryy="31910" entryz="6" rent="7085" townid="33" size="139" />
@@ -1037,4 +1037,8 @@
 	<house name="Cistern Ave" houseid="2481" entryx="33588" entryy="31926" entryz="6" rent="3745" townid="33" size="75" />
 	<house name="Rathleton Plaza 4" houseid="2482" entryx="33604" entryy="31915" entryz="6" rent="5005" townid="33" size="102" />
 	<house name="Rathleton Plaza 3" houseid="2483" entryx="33615" entryy="31913" entryz="6" rent="5735" townid="33" size="114" />
+	<house name="Unnamed House #2484" houseid="2484" entryx="32090" entryy="32205" entryz="7" rent="0" townid="6" size="13" />
+	<house name="Unnamed House #2485" houseid="2485" entryx="32092" entryy="32209" entryz="6" rent="0" townid="6" size="27" />
+	<house name="Unnamed House #2486" houseid="2486" entryx="32085" entryy="32207" entryz="5" rent="0" townid="6" size="10" />
+	<house name="Unnamed House #2487" houseid="2487" entryx="32082" entryy="32201" entryz="5" rent="0" townid="6" size="6" />
 </houses>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Control Tower" nameDescription="a control tower" race="venom" experience="3000" speed="0" manacost="0">
 	<health now="7500" max="7500"/>
-	<look typeex="23265" corpse="23355"/>
+	<look typeex="23265" corpse="24309"/>
 	<targetchange interval="2000" chance="5"/>
 	<flags>
 		<flag summonable="0"/>

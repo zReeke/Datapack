@@ -7,18 +7,17 @@ function onUse(cid, item, fromPosition, itemEx)
 	local daysvalue = 2 * 24 * 60 * 60
         time = os.time() + daysvalue
 	if player:getStorageValue(45598) <= 0 then
-		player:addItem(25172, 5)
+		player:addItem(25655, 5)
 		player:setStorageValue(45598, time)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Congratulations, Voce pegou sua recompensa.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Congratulations, you got your reward.')
 	else
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'voce tem que esperar 24H para pegar sua recompensa denovo!!.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'You already got your reward.')
 	end
 	if player:getStorageValue(45599) <= 0 then
 		player:addItem(2160, 10)
 		player:addItem(25393, 4)
 		player:addItem(25387, 4)
 		player:addItem(25431, 1)
-		player:addItem(25172, 5)
 		player:addOutfitAddon(845, 2)
 		player:addOutfitAddon(845, 1)
 		player:addOutfitAddon(846, 2)

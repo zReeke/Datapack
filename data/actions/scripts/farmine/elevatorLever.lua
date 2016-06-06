@@ -1,7 +1,7 @@
 local config = {
 	[9118] = Position(32991, 31539, 4),
 	[9119] = Position(32991, 31539, 1),
-	[9120] = Position(33061, 31527, 10),
+	[9120] = Position(33061, 31527, 14),
 	[9121] = Position(32993, 31547, 4)
 }
 
@@ -27,7 +27,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		if creature:getStorageValue(Storage.TheNewFrontier.Mission05) == 7 then
 			targetPosition.z = 10
 		elseif creature:getStorageValue(Storage.TheNewFrontier.Mission03) == 3 then
-			targetPosition.z = 12
+			targetPosition.z = 10
 		end
 	end
 

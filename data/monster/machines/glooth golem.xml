@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Glooth Golem" nameDescription="a glooth golem" race="blood" experience="1650" speed="200" manacost="490">
 	<health now="2700" max="2700"/>
-	<look type="600" corpse="23343"/>
+	<look type="600" corpse="23336"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
         <flag summonable="0"/>

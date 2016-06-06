@@ -51,7 +51,7 @@
 		<item id="2148" countmax="100" chance="40000"/><!-- gold coin -->
 		<item id="2148" countmax="40" chance="45000"/><!-- gold coin -->
 		<item id="9690" chance="940"/><!-- gear wheel -->
-		<item id="13938" chance="500"/><!-- Golden Can of Oil -->
+		<item id="13938" chance="40"/><!-- Golden Can of Oil -->
 		<item id="7618" chance="4930"/><!-- health potion -->
 		<item id="2466" chance="10"/><!-- Golden Armor -->
 		<item id="7620" chance="4950"/><!-- mana potion -->

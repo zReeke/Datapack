@@ -12,7 +12,6 @@
 	
 	<!-- BattleField Event -->
 	<movevent event="StepIn" actionid="45000" script="battlefield.lua" />
-	<movevent event="StepIn" actionid="5963" script="trainer.lua" />
 
 	<!-- Item Teleport Destinations -->
 	<movevent event="AddItem" tileitem="1" itemid="1387" script="others/itemteleports.lua" />
@@ -45,10 +44,6 @@
 	<!--- Shrines Portals -->
 	<movevent event="StepIn" fromuid="9069" touid="9120" script="others/shrinesportal.lua" />
 	<movevent event="StepIn" actionid="9117" script="others/shrinesportal_out.lua" />
-
-	<!--- Treiners -->
-	<movevent event="StepIn" fromuid="63001" touid="63017" script="others/treinersportal.lua" />
-	<movevent event="StepIn" uniqueid="63018" script="others/treinersportal_out.lua" />
 	
 	<!--- Oramond Portals -->
 	<movevent event="StepIn" fromuid="50500" touid="50501" script="others/oramondEntrance.lua" />
@@ -161,6 +156,7 @@
 	<movevent event="StepIn" actionid="8007" script="quests/the new frontier/trap.lua" />
 	<movevent event="StepIn" actionid="12135" script="quests/the new frontier/minotaurBoss.lua" />
 	<movevent event="StepIn" actionid="12138" script="quests/the new frontier/jailExit.lua" />
+	<movevent event="StepIn" actionid="12139" script="quests/the new frontier/zaosteppe.lua" />
 
 	<!--- Unnatural Selection -->
 	<movevent event="StepIn" actionid="12332" script="quests/unnatural selection/Mission2AllAroundtheWorld.lua" />
@@ -483,8 +479,6 @@
 	<movevent event="Equip" itemid="6132" slot="feet" function="onEquipItem" />
 	<movevent event="DeEquip" itemid="6132" slot="feet" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="2640" slot="feet" function="onEquipItem" />
-        <movevent event="Equip" itemid="2358" slot="feet" function="onEquipItem" />
-	<movevent event="DeEquip" itemid="2358" slot="feet" function="onDeEquipItem" />
 	<movevent event="DeEquip" itemid="2640" slot="feet" function="onDeEquipItem" />
 	<movevent event="Equip" itemid="7886" slot="feet" function="onEquipItem">
 		<vocation name="Sorcerer" />
@@ -1484,3 +1478,4 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="22424" slot="shield" function="onDeEquipItem" />
 </movements>
+>>

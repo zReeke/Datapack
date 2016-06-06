@@ -1,6 +1,6 @@
 _Lib_Battle_Info = {
 	Reward = {
-		exp = {true, 100000}, items = {true, 25172, 5}, premium_days = {false, 1}
+		exp = {true, 100000}, items = {true, 2160, 10}, premium_days = {false, 1}
 	},
 	TeamOne = {name = "Black Team", storage = 140120, pos = {x = 31377, y = 32559, z = 6}},
 	TeamTwo = {name = "Red Team", storage = 140121, pos = {x = 31447, y = 32562, z = 6}},
@@ -18,11 +18,11 @@ _Lib_Battle_Days = {
 		["22:00"] = {players = 16}
 	},
 	["Saturday"] = {
-		["15:30"] = {players = 30},
-		["21:38"] = {players = 30}
+		["15:30"] = {players = 2},
+		["21:38"] = {players = 2}
 	},
 	["Sunday"] = {
-		["00:11"] = {players = 30}
+		["00:11"] = {players = 2}
 	}
 }
 

@@ -2,29 +2,29 @@
 -- NOTE: valid values for worldType are: "pvp", "no-pvp" and "pvp-enforced"
 worldType = "pvp"
 hotkeyAimbotEnabled = true
-protectionLevel = 7
+protectionLevel = 70
 killsToRedSkull = 6
 killsToBlackSkull = 9
 pzLocked = 60000
 removeChargesFromRunes = false
-timeToDecreaseFrags = 3 * 60 * 60 * 1000
-whiteSkullTime = 10 * 60 * 1000
+timeToDecreaseFrags = 24 * 60 * 60 * 1000
+whiteSkullTime = 15 * 60 * 1000
 stairJumpExhaustion = 1500
-experienceByKillingPlayers = false
+experienceByKillingPlayers = true
 expFromPlayersLevelRange = 200
 
 -- Connection Config
 -- NOTE: maxPlayers set to 0 means no limit
-ip = "158.69.131.117"
+ip = "127.0.0.1"
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 1000
-motd = "Ocera Global"
+motd = "Acessem nosso site Sejam bem vindos"
 onePlayerOnlinePerAccount = true
 allowClones = false
-serverName = "Ocera"
+serverName = "TESTSERVER"
 statusTimeout = 5000
 replaceKickOnLogin = true
 maxPacketsPerSecond = 25
@@ -40,7 +40,7 @@ deathLosePercent = -1
 
 -- Houses
 -- NOTE: set housePriceEachSQM to -1 to disable the ingame buy house functionality
-housePriceEachSQM = 500
+housePriceEachSQM = 2000
 houseRentPeriod = "weekly"
 
 -- Item Usage
@@ -50,7 +50,7 @@ timeBetweenExActions = 1000
 -- Map
 -- NOTE: set mapName WITHOUT .otbm at the end
 mapName = "global"
-mapAuthor = "Mitsuig"
+mapAuthor = "eumesmo"
 
 -- Market
 marketOfferDuration = 7 * 24 * 60 * 60
@@ -61,8 +61,8 @@ maxMarketOffersAtATimePerPlayer = 100
 -- MySQL
 mysqlHost = "127.0.0.1"
 mysqlUser = "root"
-mysqlPass = "trocar123"
-mysqlDatabase = "servidor"
+mysqlPass = ""
+mysqlDatabase = "ot"
 mysqlPort = 3306
 mysqlSock = ""
 passwordType = "sha1"
@@ -77,10 +77,10 @@ classicEquipmentSlots = false
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
-rateExp = 2
-rateSkill = 35
-rateLoot = 4
-rateMagic = 12
+rateExp = 400
+rateSkill = 60
+rateLoot = 5
+rateMagic = 10
 rateSpawn = 6
 
 -- Monsters
@@ -101,7 +101,7 @@ defaultPriority = "high"
 startupDatabaseOptimization = false
 
 -- Status server information
-ownerName = "Mitsuig"
-ownerEmail = "mitsuig@xtibia.com"
-url = "http://oceraglobal.com"
+ownerName = "Legend of Chaos"
+ownerEmail = "yves@sigmarhohewb.com.br"
+url = "http://legendofchaos.com.br"
 location = "Brazil"

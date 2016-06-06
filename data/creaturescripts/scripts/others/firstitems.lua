@@ -2,7 +2,7 @@
 local config = {
 	[0] = {
 		--club, coat
-		items = {{2398, 1}, {2651, 1}},
+		items = {{2382, 1}, {2651, 1}},
 		--container rope, shovel, red apple
 		container = {{2120, 1}, {2554, 1}, {2674, 1}}
 	},	

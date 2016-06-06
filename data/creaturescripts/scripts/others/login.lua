@@ -15,7 +15,6 @@ local events = {
 	'InquisitionBosses',
 	'InquisitionUngreez',
 	'KillingInTheNameOfKills',
-        'KillingInTheNameOf',
 	'MastersVoiceServants',
 	'SecretServiceBlackKnight',
 	'ThievesGuildNomad',
@@ -99,5 +98,6 @@ function onLogin(player)
 		player:setStorageValue(Storage.combatProtectionStorage, os.time() + 10)
 		onMovementRemoveProtection(playerId, player:getPosition(), 10)
 	end
+	db.query('INSERT INTO `players_online` (`player_id`) VALUES (' .. playerId .. ')')
 	return true
 end

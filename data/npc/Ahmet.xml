@@ -6,7 +6,6 @@
 		<parameter key="module_shop" value="1" />
 		<parameter key="shop_buyable" value="
 			crowbar,2416,260;
-                        deed of ownership,8694,1000;
 			fishing rod,2580,150;
 			golden backpack,2004,10;
 			golden bag,7739,4;

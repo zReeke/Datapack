@@ -16,7 +16,6 @@ end
 
 addTravelKeyword('fenrock', 100, Position(32563, 31313, 7))
 addTravelKeyword('mistrock', 100, Position(32640, 31439, 7))
-addTravelKeyword('yalahar', 100, Position(32648, 31292, 6))
 
 -- Basic
 keywordHandler:addKeyword({'offer'}, StdModule.say, {npcHandler = npcHandler, text = 'I can take you to {Fenrock} and {Mistrock}!'})

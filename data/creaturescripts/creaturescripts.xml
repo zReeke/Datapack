@@ -89,16 +89,12 @@
     <event type="preparedeath" name="monster heal2" script="bosses/monster heal2.lua"/>
 
 	<!-- Others -->
-        <event script="others/recompensailha.lua" name="Recompense" type="advance"/>
-        <event script="others/recompense.lua" name="Recompensa" type="advance"/>
 	<event type="login" name="PlayerLogin" script="others/login.lua" />
-   <event type="login" name="ShopMountAddon" script="others/addonmount.lua"/>
-        <event value="task_count.lua" event="script" name="task_count" type="kill"/>
 	<event type="login" name="FirstItems" script="others/firstitems.lua" />
 	<event type="login" name="RegenerateStamina" script="others/regeneratestamina.lua" />
 	<event type="login" name="OfflineTraining" script="others/offlinetraining.lua" />
 	<event type="login" name="freebless" script="others/freeblesslowlevel.lua"/>
-        <event type="kill" name="RewardLoot" script="others/rewardloot.lua"/>
+    <event type="kill" name="RewardLoot" script="others/rewardloot.lua"/>
 	<event type="logout" name="PlayerLogout" script="others/logout.lua" />
 	<event type="death" name="PlayerDeath" script="others/playerdeath.lua" />
 	<event type="death" name="DropLoot" script="others/droploot.lua" />

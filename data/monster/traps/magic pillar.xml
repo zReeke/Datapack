@@ -16,8 +16,8 @@
 		<flag runonhealth="0"/>
 		<flag hidehealth="1"/>
 	</flags>
-	<summons maxSummons="1">
-		<summon name="Demon" interval="2000" chance="100"/>
+	<summons maxSummons="3">
+		<summon name="Demon" interval="2000" chance="7"/>
 	</summons>
 	<defenses armor="1" defense="1">
 		<defense name="healing" interval="2000" chance="30" min="0" max="0">

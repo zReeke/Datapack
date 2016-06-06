@@ -13,7 +13,7 @@ ze_zombieCountGlobalStorage = 100 -- Use empty global storage
 -- Player Variables
 ze_joinStorage = 3549 -- Storage that will be added, when player join
 ze_minPlayers = 1 -- Minimum players that have to join
-ze_maxPlayers = 30 -- Maxnimum players that can join
+ze_maxPlayers = 100 -- Maxnimum players that can join
 ze_joinCountGlobalStorage = 101 -- Use empty global storage
  
 -- States

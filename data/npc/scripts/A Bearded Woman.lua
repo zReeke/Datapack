@@ -5,178 +5,91 @@ NpcSystem.parseParameters(npcHandler)
 function onCreatureAppear(cid)			npcHandler:onCreatureAppear(cid)			end
 function onCreatureDisappear(cid)		npcHandler:onCreatureDisappear(cid)			end
 function onCreatureSay(cid, type, msg)		npcHandler:onCreatureSay(cid, type, msg)		end
-function onThink()				npcHandler:onThink()					end
+function onThink()		npcHandler:onThink()		end
 
-local t = {}
-local renown = {}
+local voices = {
+	{ text = 'I am a MAN! Get me out you drunken fools!' },
+	{ text = 'GET ME OUT OF HERE!' },
+	{ text = 'Get me out! It was all part of the plan, you fools!' },
+	{ text = 'If I ever get out of here, I\'ll kill you all! All of you!' },
+	{ text = 'I am NOT Princess Lumelia, you fools!' },
+	{ text = 'Get a locksmith and free me or you will regret it, you foolish pirates!' },
+	{ text = 'I am not a princess, I am an actor!' }
+}
 
-local config = {
-	['earthheart cuirass'] = {itemid = 25177, token = {type = 'silver', id = 25172, count = 100}},
-	['earthheart platemail'] = {itemid = 25179, token = {type = 'silver', id = 25172, count = 100}},
-	['earthmind raiment'] = {itemid = 25191, token = {type = 'silver', id = 25172, count = 100}},
-	['earthsoul tabard'] = {itemid = 25187, token = {type = 'silver', id = 25172, count = 100}},
-	['fireheart cuirass'] = {itemid = 25174, token = {type = 'silver', id = 25172, count = 100}},
-	['fireheart hauberk'] = {itemid = 25175, token = {type = 'silver', id = 25172, count = 100}},
-	['fireheart platemail'] = {itemid = 25176, token = {type = 'silver', id = 25172, count = 100}},
-	['firemind raiment'] = {itemid = 25190, token = {type = 'silver', id = 25172, count = 100}},
-	['firesoul tabard '] = {itemid = 25186, token = {type = 'silver', id = 25172, count = 100}},
-	['frostheart cuirass'] = {itemid = 18517, token = {type = 'silver', id = 25172, count = 100}},
-	['frostheart hauberk'] = {itemid = 25184, token = {type = 'silver', id = 25172, count = 100}},
-	['frostheart platemail'] = {itemid = 25185, token = {type = 'silver', id = 25172, count = 100}},
-	['frostmind raiment'] = {itemid = 25193, token = {type = 'silver', id = 25172, count = 100}},
-	['frostsoul tabard'] = {itemid = 25189, token = {type = 'silver', id = 25172, count = 100}},
-	['thunderheart cuirass'] = {itemid = 25180, token = {type = 'silver', id = 25172, count = 100}},
-	['thunderheart hauberk'] = {itemid = 25181, token = {type = 'silver', id = 25172, count = 100}},
-	['thunderheart platemail'] = {itemid = 25182, token = {type = 'silver', id = 25172, count = 100}},
-	['thundermind raiment'] = {itemid = 25192, token = {type = 'silver', id = 25172, count = 100}},
-	['thundermind tabard'] = {itemid = 25188, token = {type = 'silver', id = 25172, count = 100}},	
-	}
+npcHandler:addModule(VoiceModule:new(voices))
 
+keywordHandler:addKeyword({'job'}, StdModule.say, {npcHandler = npcHandler, text = "I am a great and famous actor! Not a princess, at all. I was only PRETENDING to be a princess. But try explaining that to those stupid pirates."})
+keywordHandler:addKeyword({'actor'}, StdModule.say, {npcHandler = npcHandler, text = "Stage acting was a waste of my immense talent. Not only am I a born leader, my talent is more profitable when it is used for conning people."})
+keywordHandler:addKeyword({'stage'}, StdModule.say, {npcHandler = npcHandler, text = "Stage acting was a waste of my immense talent. Not only am I a born leader, my talent is more profitable when it is used for conning people."})
+keywordHandler:addKeyword({'kid'}, StdModule.say, {npcHandler = npcHandler, text = "He was always a fool with a heart too soft to become a feared pirate."})
+keywordHandler:addKeyword({'princess'}, StdModule.say, {npcHandler = npcHandler, text = "Me playing a princess was just part of a cunning plan we had."})
+keywordHandler:addKeyword({'cell'}, StdModule.say, {npcHandler = npcHandler, text = "If you find some way to release me I might even let you live as reward! So you'd better do your best or I'll kill you!"})
+keywordHandler:addKeyword({'name'}, StdModule.say, {npcHandler = npcHandler, text = "How dare you? I left to rot in this dirty cell and you have nothing better to do than chit chat?"})
+keywordHandler:addKeyword({'rot'}, StdModule.say, {npcHandler = npcHandler, text = "YOU .. YOU .. You are as good as dead! I will get you! Do you hear me? I will have your head! On a platter!"})
+keywordHandler:addKeyword({'pirate'}, StdModule.say, {npcHandler = npcHandler,
+	text = {
+		'In a just world, I would be captain of a grand ship, ...',
+		'Those pirates out there would now be my minions, and we would brave the seas and become the terror of the coastal towns! ...',
+		'If only our plan had worked!'
+	}}
+)
+keywordHandler:addKeyword({'ship'}, StdModule.say, {npcHandler = npcHandler,
+	text = {
+		'Captain Kid sold his ship to buy pointless things like those insanely expensive locks for the cell doors. ...',
+		'He said the canoes would do for a while. ...',
+		'I got the impression he was not overly sad to part with the ship because he was known to suffer a lot from seasickness.'
+	}}
+)
+keywordHandler:addKeyword({'captain'}, StdModule.say, {npcHandler = npcHandler,
+	text = {
+		'I\'d have been a much better captain then Kid was. I played several captains on stage and I was good! ...',
+		'Where Kid longed for the appreciation of his men, I would rule by fear and with an iron fist!'
+	}}
+)
+keywordHandler:addKeyword({'plan'}, StdModule.say, {npcHandler = npcHandler,
+	text = {
+		'It was all captain Kid\'s idea. You see, he hated his name and planned to become known by the name captain Kidnap. ...',
+		'All he needed was someone famous to kidnap. ...',
+		'Given his men\'s dismal lack of talent and intelligence that would have been quite a feat. ...',
+		'We knew each other from a few scams we did together in the past, so he contacted me. ...',
+		'I was to impersonate the famous Princess Lumelia. You know, the one everyone was looking for. ...',
+		'That would show his men and the other pirates what a great kidnapper he was. ...',
+		'He promised me that I would become his second in command and lead a wonderful life of plundering, robbing and pillaging. ...',
+		'So I agreed to impersonate the Princess for a while and it worked fine at first. ...',
+		'He returned with me dressed as the Princess from a raid on his own and was instantaneously the hero of the day for his men. ...',
+		'Things went bad when they decided to have a victory party. ...',
+		'As far as I could make out from the mumblings of the pirates, Kid lost the key to my cell while relieving himself in the underground river. ...',
+		'The fool decided to dive after it .. never to be seen again. ...',
+		'When I found out about Kid\'s demise I tried to convince the pirates it was a hoax, but they just won\'t believe me!'
+	}}
+)
+keywordHandler:addKeyword({'kidnap'}, StdModule.say, {npcHandler = npcHandler,
+	text = {
+		'Ah kidnapping is so much fun. That is, if you\'re not on the receiving end. ...',
+		'It\'s easy money and you have a chance to frighten and torture someone who can\'t fight back!'
+	}}
+)
+keywordHandler:addKeyword({'scams'}, StdModule.say, {npcHandler = npcHandler,
+	text = {
+		'The more stupid the people are, the easier it is to con them. ...',
+		'And the poorer they are the less means they have to get revenge. Har Har! ...',
+		'So I make sure I ruin those I scam. Then they have other things to worry about than getting revenge on me.'
+	}}
+)
+keywordHandler:addKeyword({'key'}, StdModule.say, {npcHandler = npcHandler,
+	text = {
+		'The key was lost in the underground river and has probably washed into the seven seas by now! ...',
+		'If that stupid Kid hadn\'t been so obsessed with kidnapping he\'d not have sold his ship to buy the most expensive and complicated locks for his cells!'
+	}}
+)
+keywordHandler:addKeyword({'plundering'}, StdModule.say, {npcHandler = npcHandler,
+	text = {
+		'As long as we stick to undefended coastal towns we can make an easy fortune. Har Har! ...',
+		'As soon as I get out of here I\'ll finally become a pirate captain on my own. I don\'t need Captain Kid!'
+	}}
+)
 
-local function getTable()
-	local itemsList = {
-		{name = "bell", id = 18343, buy = 50},
-		{name = "gnomish crystal package", id = 18313, buy = 1000},
-		{name = "gnomish extraction crystal", id = 18213, buy = 50},
-		{name = "gnomish spore gatherer", id = 18328, buy = 50},
-		{name = "little pig", id = 18339, buy = 150}
-	}
-	return itemsList
-end
+npcHandler:setMessage(MESSAGE_GREET, "GET ME OUT OF HERE! NOW!")
 
-local function setNewTradeTable(table)
-	local items, item = {}
-	for i = 1, #table do
-		item = table[i]
-		items[item.id] = {itemId = item.id, buyPrice = item.buy, sellPrice = item.sell, subType = 0, realName = item.name}
-	end
-	return items
-end
-
-local function onBuy(cid, item, subType, amount, ignoreCap, inBackpacks)
-	local player = Player(cid)
-	local items = setNewTradeTable(getTable())
-	local count = 0
-	for i = 1, amount do
-		local item = Game.createItem(items[item].itemId, subType)
-		if player:addItemEx(item, false) ~= RETURNVALUE_NOERROR then
-			npcHandler:say('First make sure you have enough space in your inventory.', cid)
-			break
-		end
-		count = i
-	end
-
-	if count == 0 then
-		return true
-	end
-
-	player:removeMoney(items[item].buyPrice * count)
-	player:sendTextMessage(MESSAGE_INFO_DESCR, string.format('Bought %dx %s for %d gold.', count, items[item].realName, items[item].buyPrice * count))
-	return true
-end
-
-local function greetCallback(cid)
-	npcHandler:setMessage(MESSAGE_GREET, 'Ola eu troco os Silver Tokens por Itens Diga {equipamento}')
-	return true
-end
-
-local function creatureSayCallback(cid, type, msg)
-	if not npcHandler:isFocused(cid) then
-		return false
-	end
-
-	if msgcontains(msg, 'equipamento') then
-		npcHandler:say({
-			'{Silver Token}  ...',
-					}, cid)
-	elseif msgcontains(msg, 'silver token') then
-		npcHandler:say({
-			'Por Silver Tokens voce pode trocar entre {Earthheart Cuirass}, a {Earthheart Platemail}, {Earthmind Raiment}, a {Earthsoul Tabard} , a {Fireheart Cuirass}, a {Fireheart Hauberk}, {Fireheart Platemail}, {Firemind Raiment}, {Firesoul Tabard}, {Frostheart Cuirass}, {Frostheart Hauberk}, {Frostheart Platemail}, {Frostmind Raiment}, {Frostsoul Tabard}, {Thunderheart Cuirass}, {Thunderheart Hauberk}, {Thunderheart Platemail}, {Thundermind Raiment}, {Thundersoul Tabard} ...',
-		}, cid)
-	elseif msgcontains(msg, 'minor') then
-		npcHandler:say({
-			'For two minor tokens, you can buy one gnomish {supply} package! For eight tokens, you can buy a {muck} remover! For ten tokens, you can buy a {mission} crystal. For fifteen tokens, you can buy a crystal {lamp} or a mushroom {backpack}. ...',
-			'For seventy tokens, I can offer you a voucher for an {addition to the soil guardian outfit}, or a voucher for an {addition to the crystal warlord armor outfit}.'
-		}, cid)
-	elseif config[msg] then
-		local itemType = ItemType(config[msg].itemid)
-		npcHandler:say(string.format('Do you want to trade %s %s for %d %s tokens?', (itemType:getArticle() ~= "" and itemType:getArticle() or ""), itemType:getName(), config[msg].token.count, config[msg].token.type), cid)
-		npcHandler.topic[cid] = 1
-		t[cid] = msg
-	elseif msgcontains(msg, 'relations') then
-		local player = Player(cid)
-		if player:getStorageValue(Storage.BigfootBurden.QuestLine) >= 14 then
-			npcHandler:say('Our relations improve with every mission you undertake on our behalf. Another way to improve your relations with us gnomes is to trade in minor crystal tokens. ...', cid)
-			npcHandler:say('Your renown amongst us gnomes is currently {' .. math.max(0, player:getStorageValue(Storage.BigfootBurden.Rank)) .. '}. Do you want to improve your standing by sacrificing tokens? One token will raise your renown by 5 points. ', cid)
-			npcHandler.topic[cid] = 2
-		else
-			npcHandler:say('You are not even a recruit of the Bigfoots. Sorry I can\'t help you.', cid)
-		end
-	elseif npcHandler.topic[cid] == 3 then
-		local amount = getMoneyCount(msg)
-		if amount > 0 then
-			npcHandler:say('Do you really want to trade ' .. amount .. ' minor tokens for ' .. amount * 5 .. ' renown?', cid)
-			renown[cid] = amount
-			npcHandler.topic[cid] = 4
-		end
-	elseif msgcontains(msg, 'items') then
-		npcHandler:say('Do you need to buy any mission items?', cid)
-		npcHandler.topic[cid] = 5
-	elseif msgcontains(msg, 'yes') then
-		if npcHandler.topic[cid] == 1 then
-			local player, targetTable = Player(cid), config[t[cid]]
-			if player:getItemCount(targetTable.token.id) < targetTable.token.count then
-				npcHandler:say('Sorry, you don\'t have enough ' .. targetTable.token.type .. ' tokens with you.', cid)
-				npcHandler.topic[cid] = 0
-				return true
-			end
-
-			local item = Game.createItem(targetTable.itemid, 1)
-			local weight = 0
-			weight = ItemType(item.itemid):getWeight(item:getCount())
-
-			if player:addItemEx(item) ~= RETURNVALUE_NOERROR then
-				if player:getFreeCapacity() < weight then
-					npcHandler:say('First make sure you have enough capacity to hold it.', cid)
-				else
-					npcHandler:say('First make sure you have enough space in your inventory.', cid)
-				end
-				npcHandler.topic[cid] = 0
-				return true
-			end
-
-			player:removeItem(targetTable.token.id, targetTable.token.count)
-			npcHandler:say('Here have one of our ' .. item:getPluralName() .. '.', cid)
-			npcHandler.topic[cid] = 0
-		elseif npcHandler.topic[cid] == 2 then
-			npcHandler:say("How many tokens do you want to trade?", cid)
-			npcHandler.topic[cid] = 3
-		elseif npcHandler.topic[cid] == 4 then
-			local player = Player(cid)
-			if player:removeItem(18422, renown[cid]) then
-				player:setStorageValue(Storage.BigfootBurden.Rank, math.max(0, player:getStorageValue(Storage.BigfootBurden.Rank)) + renown[cid] * 5)
-				npcHandler:say('As you wish! Your new renown is {' .. player:getStorageValue(Storage.BigfootBurden.Rank) .. '}.', cid)
-			else
-				npcHandler:say('You don\'t have these many tokens.', cid)
-			end
-			npcHandler.topic[cid] = 0
-		elseif npcHandler.topic[cid] == 5 then
-			openShopWindow(cid, getTable(), onBuy, onSell)
-			npcHandler:say('Let us see if I have what you need.', cid)
-			npcHandler.topic[cid] = 0
-		end
-	elseif msgcontains(msg, 'no') and isInArray({1, 3, 4, 5}, npcHandler.topic[cid]) then
-		npcHandler:say('As you like.', cid)
-		npcHandler.topic[cid] = 0
-	end
-	return true
-end
-
-local function onReleaseFocus(cid)
-	t[cid], renown[cid] = nil, nil
-end
-
-npcHandler:setCallback(CALLBACK_GREET, greetCallback)
-npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
-npcHandler:setCallback(CALLBACK_ONRELEASEFOCUS, onReleaseFocus)
 npcHandler:addModule(FocusModule:new())

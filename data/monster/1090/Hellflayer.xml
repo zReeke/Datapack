@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Hellflayer" nameDescription="Hellflayer" race="blood" experience="11000" speed="200" manacost="0">
 	<health now="14000" max="14000"/>
-	<look type="856" corpse="25440"/>
+	<look type="856" corpse="6333"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
                 <flag summonable="0"/>

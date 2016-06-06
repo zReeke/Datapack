@@ -25,12 +25,12 @@
 	<globalevent type="startup" name="ServerStartup" script="startup.lua" />
 	<globalevent type="record" name="PlayerRecord" script="record.lua" />
 	<globalevent name="ServerSave" time="04:55:00" script="serversave.lua" />
-<globalevent name="shop" interval="5" script="others/shop.lua"/>
-        <globalevent name="history" interval="60" event="script" value="history.lua"/> 
+	<globalevent name="shop" interval="30" script="others/shop.lua"/>
 
 	<!-- Spawn -->
 	<globalevent name="RaidSystem" interval="10000" script="spawn/raids.lua" />
 	<globalevent name="BossSystem" interval="3600000" script="spawn/BossSpawn.lua" />
+	<globalevent type="startup" name="RashidSpawn" script="spawn/RashidSpawn.lua" />
 	<globalevent type="startup" name="CilliaSpawn" script="spawn/CilliaSpawn.lua" />
 	<globalevent type="startup" name="TanjisSpawn" script="spawn/tanjis.lua"/>
 	<globalevent type="startup" name="ObujosSpawn" script="spawn/obujos.lua"/>
